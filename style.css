@@ -51,8 +51,7 @@ p {
 }
 
 .tab-btn:hover {
-        background-color: hsl(289, 92%, 31%);
-    border-color: #cbd5e1;
+        box-shadow : 0 0 0 10px rgba(129, 15, 200, 0.608);
 }
 
 /* Style for the currently active tab button */
@@ -85,23 +84,37 @@ p {
     color: #2c3e50;
     margin-bottom: 20px;
 }
-
+/* stopwatch content */
 .tab-content button {
     padding: 10px 18px;
-    margin: 6px;
+    margin: 10px;
     font-size: 15px;
     border: none;
     border-radius: 6px;
-    background-color: #2ecc71;
-    color: white;
+    background-color: #000000;
+    color: #0ff;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-.tab-content button:hover {
-    background-color: #27ae60;
-    transform: translateY(-2px);
+.tab-content button:hover { 
+    box-shadow:
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff; 
+
+}
+
+#stopwatch-display{
+font-family: 'Courier New', Courier, monospace; 
+    font-size: 4.5rem; 
+    font-weight: bold;
+    color: rgb(13, 53, 81); /
+    text-shadow: 0 0 10px #0ff;
+    margin: 20px 0;
+    letter-spacing: 2px;
+
 }
 
 .tab-content p, .tab-content h3 {
@@ -126,6 +139,25 @@ p {
     border-radius: 20px;
     border: 1px;
 }
+.search-btn{ 
+    background-color: hsl(145, 63%, 42%) !important; 
+    color: #ffffff !important;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.search-btn:hover {
+    background-color: hsl(145, 63%, 32%) !important; ; 
+    transform: translateY(-2px);
+    box-shadow: none !important;
+}
+
+
 #city-input:focus {
     border-color: #3498db;
     box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
@@ -183,9 +215,12 @@ p {
     color: rgb(255, 255, 255); 
     background-color: rgb(225, 151, 15);
 }
+.calc-buttons button:hover {
+        background-color: rgb(156, 98, 17);
+        box-shadow: none;
 
-.calc-buttons button :hover {
-    color:rgb(176, 116, 5) ; 
 }
+
+
 
 
